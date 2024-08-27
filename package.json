@@ -1,26 +1,25 @@
 {
-  "name": "react-native-view-pdf",
+  "name": "@react-native-oh-tpl/react-native-view-pdf",
   "version": "0.14.0",
   "description": "React native Pdf viewer implementation",
   "main": "lib/index.js",
   "scripts": {
-    "prepare": "npm run build",
-    "prepack": "npm run build",
-    "build": "./node_modules/.bin/tsc",
+    "build":"tsc",
     "test": "jest",
     "test-coverage": "jest --coverage",
     "test-coverage-report": "codecov",
     "lint": "eslint --ext .js --ext .ts --ext .tsx ./src/",
-    "check-types": "./node_modules/.bin/tsc --noEmit"
+    "check-types": "tsc --noEmit"
   },
   "keywords": [
-    "react-native react-component pdf viewer view android ios pdf"
+    "react-native react-component pdf viewer view android ios harmony pdf"
   ],
   "author": "Maksym Rusynyk <m.rusynyk@gmail.com>, Sander Frenken <sander.frenken@hotmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=16.8.6",
-    "react-native": ">=0.60"
+    "react-native": ">=0.60",
+    "react-native-view-pdf":"0.14.0"
   },
   "devDependencies": {
     "@types/formidable": "^1.2.2",
@@ -42,27 +41,30 @@
     "react-native": "0.64.1",
     "react-test-renderer": "17.0.1",
     "ts-jest": "^28.0.6",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
   },
   "files": [
-    "src/index.tsx",
-    "src/RNPDFView.tsx",
+    "src",
     "lib",
-    "android/build.gradle",
-    "android/src/main/AndroidManifest.xml",
-    "android/src/main/java/com/rumax/reactnative/pdfviewer/*.java",
-    "RNPDF.podspec",
-    "ReactNativeViewPDF.xcodeproj/project.pbxproj",
-    "ReactNativeViewPDF/*.h",
-    "ReactNativeViewPDF/*.m"
+    "harmony"
   ],
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/rumax/react-native-PDFView.git"
+    "url": "https://github.com/react-native-oh-library/react-native-PDFView.git"
   },
   "bugs": {
-    "url": "https://github.com/rumax/react-native-PDFView/issues"
+    "url": "https://github.com/react-native-oh-library/react-native-PDFView/issues"
   },
-  "homepage": "https://github.com/rumax/react-native-PDFView#readme"
+  "homepage": "https://github.com/react-native-oh-library/react-native-PDFView#readme",
+  "harmony": {
+    "alias":"react-native-view-pdf",
+    "codegenConfig": {
+      "specPaths": [
+        "./src"
+      ]
+    }
+  }
 }

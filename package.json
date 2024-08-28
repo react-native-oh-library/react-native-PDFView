@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/react-native-view-pdf",
-  "version": "0.14.0",
+  "version": "0.14.0-0.0.1",
   "description": "React native Pdf viewer implementation",
   "main": "lib/index.js",
   "scripts": {

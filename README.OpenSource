@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-view-pdf",
+        "License": "MIT License",
+        "License File": "https://github.com/rumax/react-native-PDFView/blob/main/LICENSE",
+        "Version Number": "0.14.0",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/rumax/react-native-PDFView",
+        "Description": "React native Pdf viewer implementation"
+    }
+]

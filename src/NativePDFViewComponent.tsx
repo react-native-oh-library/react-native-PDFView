@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2024 Huawei Device Co., Ltd. All rights reserved
+ * Use of this source code is governed by a MIT license that can be
+ * found in the LICENSE file.
+ */
+
 import React, { useRef } from 'react';
 import PDFComponent, { PDFViewProps, PDFViewUrlProps } from './NativePDFView';
 import { UIManager, findNodeHandle, HostComponent, ViewStyle, StyleProp, Platform } from 'react-native';
